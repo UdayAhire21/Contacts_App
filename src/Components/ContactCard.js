@@ -15,4 +15,4 @@ const ContactCard = (props) => {
             </div>
     );
 };
-export default ContactCard;
+export default ContactCard; 
