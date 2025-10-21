@@ -5,9 +5,13 @@ const ContactList = (props)=> {
 
     console.log(props);
 
+    const deleteContactHandler = (id) => {
+        props.getContactId(id);
+    };
+
     const renderContactList = props.contact.map((contact) => {
         return (
-            <ContactCard contact={contact} />
+            <ContactCard contact={contact} clickHandler = {deleteContactHandler} />
         );
     });
     return (
