@@ -42,7 +42,7 @@ useEffect(() => {
       <Router>
         <Header />
        
-          <switch>
+          <Switch>
             
              <Routes>
               
@@ -50,7 +50,7 @@ useEffect(() => {
             <Route path="/" exact Component={ContactList}/>
       
             </Routes>
-          </switch>
+          </Switch>
        
        
     {/* <AddContact addContactHandler={addContactHandler} />
