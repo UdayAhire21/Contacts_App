@@ -21,6 +21,8 @@ function App() {
       const newContactList = contacts.filter((contact) => {
         return contact.id !== id;
       });
+
+      
       setContacts(newContactList);
     };
 
