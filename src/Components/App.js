@@ -49,9 +49,15 @@ useEffect(() => {
             
              <Routes>
               
-            <Route path="/add" Component={AddContact}/>
+            // ...
+             <Routes>
+              
+            <Route path="/add" element={<AddContact addContactHandler={addContactHandler} />} />
             {/* Note: The 'exact' prop is no longer needed in v6 */}
-            <Route path="/" Component={ContactList}/>
+            <Route path="/" element={<ContactList contact={contacts} getContactId={removeContactHandler} />} />
+      
+            </Routes>
+// ...
       
             </Routes>
           {/* REMOVED: </Switch> tag */}
