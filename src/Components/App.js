@@ -45,7 +45,7 @@ useEffect(() => {
       <Router>
         <Header />
        
-          {/* REMOVED: <Switch> tag */}
+        
             
              <Routes>
               
@@ -60,7 +60,7 @@ useEffect(() => {
 // ...
       
             </Routes>
-          {/* REMOVED: </Switch> tag */}
+          
        
        
     {/* The old way of using components is commented out below:
